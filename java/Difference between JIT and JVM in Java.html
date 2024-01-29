@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>B.Tech-Wala</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.CSS">
+        <link rel="shortcut icon" href="web_logo-removebg-preview.png" type="image">
+        <style>
+            table {
+              width: 100%;
+              border-collapse: collapse;
+              margin-top: 20px;
+            }
+        
+            th, td {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+        
+            th {
+              background-color: #f2f2f2;
+            }
+          </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="int">Difference between JIT and JVM in Java</h1>
+        </header><br><br><br><br>
+        <div class="info-box">
+            <h2 class="int">What is JIT?</h2><br>
+            <p>
+                JIT stands for "Just-In-Time." In the context of programming languages like Java, JIT refers to a type of compiler that translates code into a form that a computer's processor can directly execute, right at the moment the program is about to run. This is in contrast to ahead-of-time compilation, where the entire code is translated before execution.
+              </p><br>
+            
+              <p>
+                <strong>1. Compilation Process:</strong><br>
+                Traditional programming languages are often compiled ahead of time, meaning the entire code is translated into machine code or an intermediate form before execution.
+              </p>
+            
+              <p>
+                <strong>2. JIT Compilation:</strong><br>
+                JIT, or Just-In-Time, takes a different approach. Instead of compiling the entire program before running it, JIT compilers translate code into machine code as needed during runtime. When a Java program is executed, the Java Virtual Machine (JVM) uses the JIT compiler to convert Java bytecode into native machine code just before executing it.
+              </p>
+            
+              <p>
+                <strong>3. Benefits:</strong><br>
+                JIT compilation allows for optimizations tailored to the actual runtime conditions and hardware of the computer. It can improve the performance of the program by translating frequently used portions of code into highly optimized machine code.
+              </p>
+            
+              <p>
+                <strong>4. Drawbacks:</strong><br>
+                There is an initial overhead as the program starts, where some code is interpreted before being compiled. However, once a section of code (a "hotspot") is identified as frequently used, it gets compiled into optimized machine code for faster execution.
+              </p>
+            <br>
+              <p>
+                <h2>Note:-</h2>
+                In essence, JIT compilation aims to strike a balance between the advantages of ahead-of-time compilation (static optimization) and interpretation (dynamic adaptability) by translating code into machine code at the most opportune moment—just in time for execution.
+              </p><br>
+              <h2 class="int">What is JVM?</h2><br>
+              <p>
+                The Java Virtual Machine (JVM) is a crucial component of the Java Runtime Environment (JRE) and plays a central role in executing Java programs. It operates as an abstraction layer between the Java code and the underlying hardware and operating system.
+              </p>
+            
+              <p>
+                <strong>1. Compilation Process:</strong><br>
+                When you write a Java program, the source code is compiled into an intermediate form called bytecode. This bytecode is platform-independent and can be executed on any system with a JVM. The JVM uses either interpretation or Just-In-Time (JIT) compilation to translate bytecode into native machine code for efficient execution.
+              </p>
+            
+              <p>
+                <strong>2. Benefits of JVM:</strong><br>
+                - <em>Platform Independence:</em> Java programs are written once and can run on any device with a compatible JVM, providing platform independence.
+                - <em>Memory Management:</em> The JVM handles memory allocation and garbage collection, making it easier for developers to manage memory in their programs.
+                - <em>Security:</em> JVM provides a secure execution environment with features like bytecode verification, preventing malicious code execution.
+                - <em>Portability:</em> Java applications can be easily ported to different environments without modification, thanks to the JVM.
+              </p>
+            
+              <p>
+                <strong>3. Drawbacks of JVM:</strong><br>
+                - <em>Overhead:</em> There is an initial overhead as the JVM interprets or compiles bytecode before execution.
+                - <em>Resource Consumption:</em> JVM consumes memory and processing power, which might be a concern in resource-constrained environments.
+                - <em>Warm-up Time:</em> The time taken for the JVM to identify and optimize frequently executed code (JIT compilation) can impact the initial execution speed.
+              </p>
+            
+              <p>
+                <h2>Note:-</h2>
+                In summary, the JVM provides a platform-independent execution environment for Java programs. While it offers numerous benefits such as platform independence and memory management, it also comes with drawbacks like initial overhead and resource consumption.
+              </p><br><br>
+              <h2 class="int">Difference between JIT and JVM in Java:</h2>
+              <table>
+                <tr>
+                  <th>Aspect</th>
+                  <th>JVM</th>
+                  <th>JIT</th>
+                </tr>
+                <tr>
+                  <td>Role</td>
+                  <td>The overall runtime environment for executing Java programs.</td>
+                  <td>A specific component within the JRE that dynamically compiles Java bytecode into native code.</td>
+                </tr>
+                <tr>
+                  <td>Function</td>
+                  <td>Interprets and executes Java bytecode.</td>
+                  <td>Translates bytecode into native machine code just before execution.</td>
+                </tr>
+                <tr>
+                  <td>Timing</td>
+                  <td>Operates continuously during program execution.</td>
+                  <td>Operates just before execution, translating bytecode on-the-fly.</td>
+                </tr>
+                <tr>
+                  <td>Platform Independence</td>
+                  <td>Provides platform independence for Java programs.</td>
+                  <td>Contributes to performance optimization but is not inherently platform-independent.</td>
+                </tr>
+                <tr>
+                  <td>Components</td>
+                  <td>Includes various components for managing memory, interpreting bytecode, etc.</td>
+                  <td>A specific compiler component within the broader JRE.</td>
+                </tr>
+              </table>
+
+            </div>
+  
+            <div class="footer">
+              <p>&copy; 2023 B.Tech-Wala. All rights reserved.</p>
+            </div>
+        
+        </body>
+        </html>
+

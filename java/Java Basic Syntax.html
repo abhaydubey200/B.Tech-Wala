@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>B.Tech-Wala</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="web_logo-removebg-preview.png" type="image">
+        <style>
+          table {
+              border-collapse: collapse;
+              width: 100%;
+          }
+  
+          th, td {
+              border: 1px solid #ddd;
+              padding: 8px;
+              text-align: left;
+          }
+  
+          th {
+              background-color: #f2f2f2;
+          }
+      </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="int">Java Basic Syntax</h1>
+        </header><br><br><br><br>
+        <div class="info-box">
+            <h2 class="int">Basic Syntax? </h2><br>
+           <p><strong>In Java</strong> , syntax refers to the set of rules that dictate how Java programs must be written. It defines the structure and combination of symbols, keywords, and punctuation that make up a valid Java program. Following the correct syntax is crucial because the Java compiler relies on it to understand and translate the source code into executable bytecode.</p>
+
+          <p>  Here are some key aspects of Java syntax:</p><br>
+          <p>
+            <strong>1. Case Sensitivity:</strong> Java is case-sensitive. This means that identifiers (such as variable names, class names, and method names) written in different cases are considered different.
+          </p>
+          <div class="code-box">
+            <pre>
+                <code>
+                    int count = 5;
+                    int Count = 10; // These are two different variables
+                </code>
+            </pre>
+          </div><br>
+          <p>
+            <strong>2. Class Declaration:</strong> Every Java program revolves around classes. The basic structure of a class includes the keyword class, followed by the class name.
+          </p>
+          <div class="code-box">
+            <pre>
+                <code>
+                  public class MyClass {
+                    // Class content goes here
+                }              
+                </code>
+            </pre>
+          </div><br>
+          <p>
+          <strong>3. Method Declaration: </strong>Methods are functions within a class. The syntax for declaring a method involves specifying the return type, method name, and any parameters it accepts.
+          </p>
+          <div class="code-box">
+          <pre>
+              <code>
+                public int addNumbers(int a, int b) {
+                  return a + b;
+              }                         
+              </code>
+          </pre>
+          </div><br>
+          <p>
+          <strong>4. Main Method: </strong>Every Java application must have a main method. It serves as the entry point for the program and has a specific signature.
+          </p>
+          <div class="code-box">
+          <pre>
+            <code>
+              public static void main(String[] args) {
+                // Program execution starts here
+            }     
+            </code>
+          </pre>
+          </div><br>
+          <p>
+          <strong>
+          5. Statements and Blocks: 
+          </strong>Java statements end with a semicolon (;). Blocks of code are enclosed in curly braces {}.
+          </p>
+          <div class="code-box">
+          <pre>
+          <code>
+            int x = 5; // Statement
+            if (x > 0) { // Block
+                System.out.println("Positive");
+            }    
+          </code>
+          </pre>
+          </div><br>
+          <p>
+          <strong>6. Comments: </strong> Comments are used for adding explanatory notes to the code. In Java, comments can be single-line (//) or multi-line (/* */).
+          </p>
+          <div class="code-box">
+          <pre>
+          <code>
+          // This is a single-line comment
+          /*
+          This is a
+          multi-line comment
+          */      
+          </code>
+          </pre>
+          </div><br>
+          <p>
+          <strong>7. Variables:</strong> Variables are declared with a data type followed by the variable name.
+          </p>
+          <div class="code-box">
+          <pre>
+          <code>
+          int age = 25;
+          double price = 19.99;
+          </code>
+          </pre>
+          </div><br>
+          <p>
+          <strong>8. Data Types: </strong>Java has various data types, including primitive types (int, double, boolean) and reference types (objects, arrays).
+          </p>
+          <div class="code-box">
+          <pre>
+          <code>
+          int number = 42;
+          double pi = 3.14;
+          String text = "Hello, Java!";
+          
+          </code>
+          </pre>
+          </div><br>
+          <p>
+          <strong>9. Object Instantiation:</strong>Object Instantiation: Creating objects involves using the new keyword along with a constructor.
+          </p>
+          <div class="code-box">
+          <pre>
+          <code>
+          MyClass myObject = new MyClass();
+          
+          </code>
+          </pre>
+          </div><br>
+          <p>
+          <strong>10. Conditional Statements:</strong> Java supports if, else if, and else for conditional branching.
+          </p>
+          <div class="code-box">
+          <pre>
+          <code>
+          if (x > 0) {
+            System.out.println("Positive");
+          } else if (x < 0) {
+            System.out.println("Negative");
+          } else {
+            System.out.println("Zero");
+          }
+          
+          </code>
+          </pre>
+          </div><br>
+          <p>
+          <h2>Note:-</h2>Following these rules ensures that the Java compiler can understand and interpret your code correctly.
+          </p><br><br>
+          <h2 class="int">Java Modifiers Table</h2>
+    <table>
+        <tr>
+            <th>Access Modifier</th>
+            <th>Within Class</th>
+            <th>Within Package</th>
+            <th>Outside Package by subclass only</th>
+            <th>Outside Package</th>
+        </tr>
+        <tr>
+            <td>Private</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Default</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Protected</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Public</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+    </table><br><br>
+    <h2 class="int">Java Keywords</h2>
+
+    <table>
+        <tr>
+            <th>abstract</th>
+            <th>assert</th>
+            <th>boolean</th>
+            <th>break</th>
+            <th>byte</th>
+            <th>case</th>
+            <th>catch</th>
+            <th>char</th>
+            <th>class</th>
+            <th>const</th>
+        </tr>
+        <tr>
+            <td>continue</td>
+            <td>default</td>
+            <td>do</td>
+            <td>double</td>
+            <td>else</td>
+            <td>enum</td>
+            <td>extends</td>
+            <td>final</td>
+            <td>finally</td>
+            <td>float</td>
+        </tr>
+        <tr>
+            <td>for</td>
+            <td>goto</td>
+            <td>if</td>
+            <td>implements</td>
+            <td>import</td>
+            <td>instanceof</td>
+            <td>int</td>
+            <td>interface</td>
+            <td>long</td>
+            <td>native</td>
+        </tr>
+        <tr>
+            <td>new</td>
+            <td>package</td>
+            <td>private</td>
+            <td>protected</td>
+            <td>public</td>
+            <td>return</td>
+            <td>short</td>
+            <td>static</td>
+            <td>strictfp</td>
+            <td>super</td>
+        </tr>
+        <tr>
+            <td>switch</td>
+            <td>synchronized</td>
+            <td>this</td>
+            <td>throw</td>
+            <td>throws</td>
+            <td>transient</td>
+            <td>try</td>
+            <td>void</td>
+            <td>volatile</td>
+            <td>while</td>
+        </tr>
+    </table>
+
+        </div>
+
+
+
+
+
+
+
+
+            
+<div class="footer">
+  <p>&copy; 2023 B.Tech-Wala. All rights reserved.</p>
+</div>
+            
+            </body>
+            </html>
+    
+    

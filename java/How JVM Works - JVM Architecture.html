@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>B.Tech-Wala</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.CSS">
+        <link rel="shortcut icon" href="web_logo-removebg-preview.png" type="image">
+    </head>
+    <body>
+        <header>
+            <h1 class="int">How JVM Works & Architecture?</h1>
+        </header><br><br><br><br>
+        <div class="info-box">
+            <h2 class="int">JVM Works:</h2><br>
+            <p><strong>Java Virtual Machine (JVM)</strong> is a crucial component of the Java Runtime Environment (JRE) that plays a central role in executing Java bytecode. Here are key topics defining the work of JVM in Java:</p>
+
+  <p><strong>1.Introduction to JVM:</strong>
+    
+      <p>. Explanation of what JVM is and its significance in the Java ecosystem.</p>
+      <p>. How JVM facilitates platform independence through its bytecode execution model.</p>
+    
+  </p>
+
+  <p><strong>2.JVM Architecture:</strong>
+    
+      <p>. Overview of the key components of the JVM architecture, including Class Loader, Execution Engine, and Memory areas (Heap, Method Area, Stack, and PC Register).</p>
+    
+  </p>
+
+  <p><strong>3.Class Loader:</strong>
+    
+      <p>. Role of the Class Loader in loading Java classes into memory.</p>
+      <p>. Different types of class loaders: Bootstrap, Extension, and Application.</p>
+    
+  </p>
+
+  <p><strong>4.Execution Engine:</strong>
+    
+      <p>. Explanation of how the Execution Engine interprets and executes Java bytecode.</p>
+      <p>. Just-In-Time (JIT) compilation and its role in optimizing code for better performance.</p>
+    </ul>
+  </p>
+
+  <p><strong>5.Memory Management:</strong>
+    
+      <p>. Overview of memory areas in the JVM: Heap, Method Area, Stack, and PC Register.</p>
+      <p>. How JVM manages memory, including object allocation and garbage collection.</p>
+    
+  </p>
+
+  <p><strong>6.Garbage Collection:</strong>
+    
+      <p>. In-depth explanation of the garbage collection process in the JVM.</p>
+      <p>. Different garbage collection algorithms and their impact on performance.</p>
+    
+  </p>
+
+  <p><strong>7.Java Stack and Heap:</strong>
+    
+      <p>. Detailed discussion on the Java Stack and Heap memory areas.</p>
+      <p>. How the stack is used for method calls and local variable storage, and the heap for object storage.</p>
+    
+  </p>
+
+  <p><strong>8.Java Native Interface (JNI):</strong>
+    
+      <p>. Introduction to JNI and its role in enabling Java applications to interact with native code.</p>
+      <p>. Examples of scenarios where JNI might be used.</p>
+    
+  </p>
+
+  <p><strong>9.Java Performance Monitoring and Tuning:</strong>
+    
+      <p>. Tools and techniques for monitoring and tuning the performance of Java applications running on the JVM.</p>
+      <p>. Profiling tools, memory analyzers, and other utilities.</p>
+    
+  </p>
+
+  <p><strong>10.JVM Security:</strong>
+    
+      <p>. Overview of security features provided by the JVM.</p>
+      <p>. How the JVM ensures the execution of secure and sandboxed Java applications.</p>
+    
+  </p>
+
+  <p><strong>11.HotSpot JVM:</strong>
+    
+      <p>. Introduction to HotSpot, a widely used JVM implementation.</p>
+      <p>. How HotSpot optimizes code through adaptive compilation.</p>
+    
+  </p>
+
+  <p><strong>12.JVM Languages and Compatibility:</strong>
+    
+      <p>. Discussion on the compatibility of different programming languages with the JVM.</p>
+      <p>. Examples of languages other than Java that run on the JVM, such as Kotlin, Scala, and Groovy.</p>
+    
+  </p>
+
+
+<p><h4>Note:-</h4>Understanding these topics provides a comprehensive insight into how the Java Virtual Machine operates and manages Java applications during execution.</p>
+
+<br><br>
+    <div class="container">
+      <img class="image" src="java-jvm-architecture.png" alt="Your Image">
+      <div class="content">
+        <!-- Your content for the right side goes here -->
+        <p>
+          The JVM (Java Virtual Machine) architecture can be broken down into several key components:
+      
+          <ul>
+            <li><strong>Class file:</strong> The bytecode file created by the Java compiler.</li>
+            <li><strong>Method Area:</strong> Stores all the class-level information (like method names, fields, etc.).</li>
+            <li><strong>Execution Engine:</strong> This engine interprets the bytecode present in the method area or uses a JIT compiler to compile the bytecode into machine code and execute it.</li>
+            <li><strong>Heap:</strong> Stores objects created by the Java application.</li>
+            <li><strong>Java Stack:</strong> Manages the execution of the program by storing local variables, partial outcomes, and method return addresses.</li>
+            <li><strong>Runtime Data Areas:</strong> Consists of all the runtime components.</li>
+            <li><strong>PC Register:</strong> Contains the address of the current instruction in the JVM.</li>
+            <li><strong>Registers:</strong> Stores data values that are being used by the program.</li>
+            <li><strong>Native Method Interface (JNI):</strong> Enables interaction between Java and native code (like C, C++, etc.).</li>
+            <li><strong>Native Method Stack:</strong> Stores the local variables and partial outcomes for the native methods.</li>
+            <li><strong>Java Native Libraries (JNI):</strong> Contains native libraries like JNI and Java Native Interface (JNA) for implementing native methods.</li>
+          </ul>
+      
+          This image illustrates the interactions and components that make up the JVM architecture. It provides a high-level understanding of how Java code is executed and managed by the JVM.
+        </p>
+        </div>
+       
+</div><br><br>
+<p>
+  <h2 class="int">Overall Functionality:</h2>
+
+  <strong>Note:-</strong> When a Java program is executed, the JVM loads the class files, verifies their integrity, and then interprets or compiles the bytecode for execution. The garbage collector manages memory by reclaiming unused objects in the heap, preventing memory leaks. The JVM ensures platform independence by providing a consistent runtime environment for Java applications across different operating systems.
+</p>
+
+<p>
+  In summary, the JVM serves as a virtual execution environment for Java applications, offering a combination of platform independence, memory management, and efficient execution through bytecode interpretation and compilation. Its modular architecture allows it to adapt to various hardware and operating system configurations, making Java a versatile and widely used programming language.
+</p>
+
+        </div>
+          
+<div class="footer">
+  <p>&copy; 2023 B.Tech-Wala. All rights reserved.</p>
+</div>
+        </body>
+        </html>
+

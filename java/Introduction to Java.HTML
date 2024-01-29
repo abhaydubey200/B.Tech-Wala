@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B.Tech-wala</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="main.CSS">
+<link rel="shortcut icon" href="web_logo-removebg-preview.png" type="image">
+</head>
+<body>
+  <header>
+    <h1 class="int">
+        Introduction to Java
+    </h1>
+  </header><br><br>
+   
+  <div class="info-box">
+    <h2 class="int">Intro of java</h2>
+    <p>
+        Java is a versatile, object-oriented programming language designed to minimize implementation dependencies.
+        The principle behind Java is "write once, run anywhere" (WORA), meaning that once Java code is compiled, it
+        can run on any platform supporting Java without requiring recompilation. Introduced in 1995, Java quickly
+        gained popularity for developing applications across desktop, web, and mobile devices. Its simplicity,
+        robustness, and robust security features have made it a preferred choice for enterprise-level applications.
+    </p>
+    <p>
+        James Gosling, initially developing Java in 1991 along with Mike Sheridan and Patrick Naughton
+        (collectively known as the Green team) at Sun Microsystems Inc., later saw Java being acquired by Oracle
+        Corporation. Java simplifies the tasks of writing, compiling, and debugging programs, emphasizing the
+        creation of reusable and modular code. As a class-based, object-oriented language, Java minimizes
+        implementation dependencies and ensures that compiled Java code, in the form of bytecode, can execute on
+        any Java Virtual Machine (JVM). The syntax of Java closely resembles that of C/C++.
+    </p>
+    <p>
+        Java's history unfolds with the initiation of the Java language by the Green team in 1991. The first public
+        implementation, Java 1.0, was released by Sun Microsystems in 1996, offering no-cost run-times on various
+        platforms. The Java 1.0 compiler underwent a significant transformation when Arthur Van Hoff rewrote it in
+        Java, ensuring strict compliance with specifications. Subsequent versions, starting with Java 2, featured
+        multiple configurations tailored for different platform types.
+    </p>
+    <p>
+        In 1997, Sun Microsystems engaged with the ISO standards body to formalize Java, but it later withdrew from
+        the process. Despite its proprietary software status, Sun, at one point, provided many Java implementations
+        without charge. Sun's revenue generation from Java involved selling licenses for specialized products, such
+        as the Java Enterprise System. The open-sourcing of Java's virtual machine core code in 2006 marked a
+        significant shift toward making Java more accessible. By 2007, Sun had completed this process, releasing
+        all JVM core code under open-source distribution terms. Java has since continued to evolve and remains a
+        fundamental technology in the world of software development.
+    </p>
+    <p>
+        On November 13, 2006, Sun Microsystems released a substantial portion of its Java Virtual Machine (JVM) as
+        free, open-source software. This process was completed on May 8, 2007, making the core code of JVM available
+        under open-source distribution terms.
+    </p>
+
+    <p>
+        The principles guiding the creation of Java encompassed simplicity, robustness, security, high-performance,
+        portability, multi-threading, interpretation, dynamism, and more. In 1995, James Gosling, often referred to
+        as the Father of Java, developed the language. Today, Java finds applications in mobile devices, internet
+        programming, games, e-business, and various other domains.
+    </p>
+
+    <h2 class="int">Java Application Program Development Steps</h2>
+    <ol>
+        <li><strong>Creating the Program:</strong> Use a Text Editor (Notepad) or an IDE (NetBeans).</li>
+        <pre><code>class Test {
+public static void main(String[] args) {
+    System.out.println("My First Java Program.");
+}
+}</code></pre>
+        <p>File -> Save -> <code>d:\Test.java</code></p>
+
+        <li><strong>Compiling the Program:</strong> Run the Java compiler (javac) from the command prompt.</li>
+        <pre><code>javac Test.java</code></pre>
+        <p>If successful, the compiler creates a file named "Test.class" containing the program's bytecode.</p>
+
+        <li><strong>Running the Program:</strong> Use the Java Interpreter to execute the program.</li>
+    </ol>
+
+    <p>
+        Before starting, ensure that the Java Development Kit (JDK) is properly installed on your system, and the
+        path is set.
+    </p>
+
+    <h2 class="int">Why is it Named Java?</h2>
+    <p>
+        Originally named OAK, the team sought a new name reflecting the essence of technology. Suggested names like
+        Silk, Jolt, revolutionary, DNA, and dynamic were considered. Java emerged as a top choice, preferred for its
+        uniqueness. The name has no acronym and was inspired by the island in Indonesia where the first coffee
+        (java coffee) was produced. James Gosling chose this name during a coffee break near his office.
+    </p>
+
+    <h2 class="int">Java Terminology</h2>
+    <ol>
+        <li>
+            <strong>Java Virtual Machine (JVM):</strong> Known as JVM, it undergoes three execution phases:
+            writing, compiling, and running the program. Writing is done by Java programmers, compilation is
+            performed by the JAVAC compiler, and running involves the execution of bytecode generated by the
+            compiler. JVM ensures platform independence.
+        </li>
+
+        <li>
+            <strong>Bytecode in the Development Process:</strong> Javac compiler of JDK compiles Java source code
+            into bytecode saved as .class files. Tools like javap can be used to view bytecode.
+        </li>
+
+        <li>
+            <strong>Java Development Kit (JDK):</strong> A comprehensive development kit including a compiler,
+            Java Runtime Environment (JRE), debuggers, and documentation. JDK installation is necessary for
+            creating, compiling, and running Java programs.
+        </li>
+
+        <li>
+            <strong>Java Runtime Environment (JRE):</strong> Included in JDK, JRE allows Java programs to run but
+            lacks the ability to compile. It comprises a browser, JVM, applet support, and plugins.
+        </li>
+
+        <li>
+            <strong>Garbage Collector:</strong> In Java, the Garbage Collector recollects objects that are no
+            longer referenced, simplifying memory management for programmers.
+        </li>
+
+        <li>
+            <strong>ClassPath:</strong> The file path where Java runtime and compiler look for .class files. JDK
+            provides default libraries, and additional libraries must be added to the classpath.
+        </li>
+    </ol>
+
+    <h2 class="int">Main Features of Java</h2>
+    <ol>
+        <li>
+            <strong>Platform Independent:</strong> Java's compiler converts source code to bytecode, allowing
+            execution on different platforms. This architecture-neutral bytecode contributes to Java's
+            platform-independent nature.
+        </li>
+
+        <li>
+            <strong>Object-Oriented Programming Language:</strong> Java organizes programs based on objects,
+            incorporating concepts like abstraction, encapsulation, inheritance, and polymorphism.
+        </li>
+
+        <li>
+            <strong>Simple:</strong> Java eliminates complex features like pointers and explicit memory
+            allocation, making it a straightforward language.
+        </li>
+
+        <li>
+            <strong>Robust:</strong> Java emphasizes error-checking, incorporating features like garbage
+            collection, exception handling, and efficient memory allocation.
+        </li>
+
+        <li>
+            <strong>Secure:</strong> Absence of pointers in Java enhances security, preventing access to
+            out-of-bound arrays and minimizing security flaws.
+        </li>
+
+        <li>
+            <strong>Distributed:</strong> Java facilitates the creation of distributed applications using
+            technologies like Remote Method Invocation and Enterprise Java Beans.
+        </li>
+
+        <li>
+            <strong>Multithreading:</strong> Java supports concurrent execution of multiple program parts,
+            maximizing CPU utilization.
+        </li>
+
+        <li>
+            <strong>Portable:</strong> Java code written on one machine can run on another due to its
+            platform-independent bytecode.
+        </li>
+
+        <li>
+            <strong>High Performance:</strong> Java architecture, including Just In Time (JIT) compilation,
+            enhances performance by compiling methods on demand.
+        </li>
+
+        <li>
+            <strong>Dynamic Flexibility:</strong> Java's object-oriented nature provides flexibility to add
+            classes, new methods, and create new classes through subclasses. Support for native methods in
+            languages like C and C++ adds versatility.
+        </li>
+
+        <li>
+            <strong>Sandbox Execution:</strong> Java programs run in a separate space, ensuring execution without
+            affecting the underlying system. The bytecode verifier enhances security by checking for access
+            violations.
+        </li>
+
+        <li>
+            <strong>Write Once Run Anywhere:</strong> Java applications generate a ‘.class’ file with
+            architecture-neutral bytecode, enabling execution on different platforms. This feature is pivotal for
+            Java's extensive use in the IT industry.
+        </li>
+
+        <li>
+            <strong>Power of Compilation and Interpretation:</strong> Java integrates both compilation and
+            interpretation. The Java compiler converts source code to bytecode, and JVM executes this bytecode to
+            machine OS-dependent executable code.
+        </li>
+    </ol>
+
+    <h2 class="int">Java Class Terminology</h2>
+    <ul>
+        <li><strong>class:</strong> Used to declare classes in Java.</li>
+        <li><strong>public:</strong> An access specifier indicating visibility to all.</li>
+        <li><strong>static:</strong> A keyword to make a function static. The main() method is called by JVM
+            without creating an object for the class.</li>
+        <li><strong>void:</strong> The return type, indicating the function will not return anything.</li>
+        <li><strong>main:</strong> The most important method in a Java program, where all the logic must be
+            inside. The absence of a main() method causes compilation errors.</li>
+        <li><strong>String[] args:</strong> Signifies that users may enter parameters at the command line. Both
+            forms, String[] args and String args[], are accepted by the Java compiler.</li>
+        <li><strong>System.out.println:</strong> Used to print on the console, similar to “printf” in C
+            language.</li>
+    </ul>
+    
+    <p><h2 class="int">Advantages of Java:</h2></p>
+    <p>
+        <strong>Platform independent:</strong>
+        Java code can run on any platform that has a Java Virtual Machine (JVM) installed, which means that applications can be written once and run on any device.
+    </p>
+    <p>
+        <strong>Object-Oriented:</strong>
+        Java is an object-oriented programming language, which means that it follows the principles of encapsulation, inheritance, and polymorphism.
+    </p>
+    <p>
+        <strong>Security:</strong>
+        Java has built-in security features that make it a secure platform for developing applications, such as automatic memory management and type checking.
+    </p>
+    <p>
+        <strong>Large community:</strong>
+        Java has a large and active community of developers, which means that there is a lot of support available for learning and using the language.
+    </p>
+    <p>
+        <strong>Enterprise-level applications:</strong>
+        Java is widely used for developing enterprise-level applications, such as web applications, e-commerce systems, and database systems.
+    </p>
+
+    <p><h2 class="int">Disadvantages of Java:</h2></p>
+    <p>
+        <strong>Performance:</strong>
+        Java can be slower compared to other programming languages, such as C++, due to its use of a virtual machine and automatic memory management.
+    </p>
+    <p>
+        <strong>Memory management:</strong>
+        Java’s automatic memory management can lead to slower performance and increased memory usage, which can be a drawback for some applications.
+    </p>
+    <h2 class="int">
+        Important Points Of java:
+    </h2>
+    <p><strong>1.Platform Independence:</strong></p>
+<p>Java follows the "Write Once, Run Anywhere" (WORA) principle, allowing compiled Java code to run on any device with a Java Virtual Machine (JVM).</p>
+
+<p><strong>2.Object-Oriented Programming (OOP):</strong></p>
+<p>Java is designed around OOP principles, promoting modularity, reusability, and flexibility in software development.</p>
+
+<p><strong>3.Security Features:</strong></p>
+<p>Java incorporates robust security features, including automatic memory management, type checking, and built-in security mechanisms, making it a secure platform for application development.</p>
+
+<p><strong>4.Large and Active Community:</strong></p>
+<p>Java has a vast and active developer community, providing extensive support, resources, and libraries for learning and implementing Java-based solutions.</p>
+
+<p><strong>5.Enterprise-Level Applications:</strong></p>
+<p>Widely used for building large-scale enterprise applications, Java is suitable for developing complex systems, web applications, e-commerce platforms, and database applications.</p>
+
+<p><strong>6.Portability:</strong></p>
+<p>Java's platform independence allows applications to be easily ported across different operating systems without modification, enhancing flexibility in deployment.</p>
+
+<p><strong>7.Versatility:</strong></p>
+<p>Java is versatile and used in various domains, including mobile app development (Android), web development (Java EE), scientific computing, big data processing (Hadoop), and more.</p>
+
+<p><strong>8.Multithreading Support:</strong></p>
+<p>Java provides built-in support for multithreading, allowing concurrent execution of multiple threads, enhancing performance in applications that require parallel processing.</p>
+
+<p><strong>9.Rich Standard Library:</strong></p>
+<p>Java comes with a comprehensive standard library that includes a wide range of classes and methods, simplifying common programming tasks and reducing the need for external libraries.</p>
+
+<p><strong>10.Automatic Memory Management:</strong></p>
+<p>The Java Virtual Machine (JVM) manages memory automatically through garbage collection, reducing the likelihood of memory-related errors and improving overall system stability.</p>
+
+<p><strong>11.Community-Driven Evolution:</strong></p>
+<p>Java is continuously evolving with active community involvement, receiving updates and improvements to keep up with modern programming needs.</p>
+
+<p><strong>12.Sandboxing and Security Model:</strong></p>
+<p>Java's sandboxing capabilities enable the execution of applications in a secure environment, protecting the host system from potential harm caused by malicious code.</p>
+
+<p><strong>13.Industry Standard for Large Systems:</strong></p>
+<p>Java is a preferred choice for developing large-scale, mission-critical systems in industries such as finance, healthcare, telecommunications, and more.</p>
+
+<p><strong>14.Backward Compatibility:</strong></p>
+<p>Java places a strong emphasis on backward compatibility, ensuring that older Java applications can run on newer versions without major modifications.</p>
+
+<p><strong>15.Community-Driven Open Source:</strong></p>
+<p>With a significant portion of Java being open source, the community actively contributes to its development, fostering innovation and adaptability.</p>
+
+</div>
+
+<!-- footer -->
+  
+<div class="footer">
+  <p>&copy; 2023 B.Tech-Wala. All rights reserved.</p>
+</div>
+
+</body>
+</html>

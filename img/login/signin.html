@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initiale-scale=1">
+	<link rel="stylesheet" type="text/css" href="style_signin.css">
+	<link rel="icon" type="image/icon" href="web_logo-removebg-preview.png">
+	<script src="mordr3d.js"></script>
+	<title>B.Tech-Wala</title>
+</head>
+
+<body onload="postxhrreq('signin.html')">
+	<form class="frame">
+		<h1>Sign In</h1>
+		<input type="text" name="" placeholder="Username" id="username">
+		<input type="password" name="" placeholder="Password" id="password">
+		<input type="button" name="" value="Log In" onclick="LoadCheckCreds()">
+		<p>Don't Have An Account ?</p>
+		<a href="signup.html">
+			<p id="sun">Sign Up Now !</p>
+		</a>
+	</form>
+	<script src="script_signin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>B.Tech-Wala</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="web_logo-removebg-preview.png" type="image">
+    </head>
+    <body>
+        <header>
+            <h1 class="int">Primitive data type vs. Object data type in Java with Examples</h1>
+        </header><br><br><br><br>
+        <div class="info-box">
+            <h2 class="int">What are primitive Data Types in Java?</h2><br>
+            <p>
+                Primitive data types in programming serve as the fundamental building blocks, representing simple values directly supported by the language. In Java, these data types are distinct from objects; they store raw data and lack the methods associated with object-oriented constructs. Java has eight primitive data types, each with a specific size and purpose:
+            </p>
+            
+            
+                <p><strong>byte:</strong> 8-bit signed integer.</p>
+                <p><strong>short:</strong> 16-bit signed integer.</p>
+                <p><strong>int:</strong> 32-bit signed integer.</p>
+                <p><strong>long:</strong> 64-bit signed integer.</p>
+                <p><strong>float:</strong> 32-bit floating-point number.</p>
+                <p><strong>double:</strong> 64-bit floating-point number.</p>
+                <p><strong>char:</strong> 16-bit Unicode character.</p>
+                <p><strong>boolean:</strong> Represents true or false values.</p><br>
+            
+            
+            <p>
+                <h2>Note:-</h2>
+                These primitive data types efficiently represent simple values and come with predefined sizes and operations. They are commonly used for performing basic arithmetic operations, making comparisons, and storing small pieces of data in Java programs.
+            </p><br>
+            <h2 class="int">Object Data Type In Java?</h2>
+            <p>
+                In Java, the term "Object" refers to a data type that is the root of the class hierarchy. All classes in Java are directly or indirectly derived from the <code>Object</code> class. This means that any object in Java can be assigned to a variable of type <code>Object</code>. The <code>Object</code> class provides a set of methods that are common to all Java objects.
+            </p>
+            
+            <p>
+                In short, the <code>Object</code> data type is a universal type that can represent any Java object. It is particularly useful in situations where you need to work with objects of different types in a generic manner. For example, collections like <code>ArrayList</code> can store objects of any type, and they use the <code>Object</code> type as a common base. However, when using <code>Object</code> types, you may need to cast them back to their original types before performing specific operations.
+            </p><br>
+            <h2 class="int">Primitive data type vs. Object data type in Java with Examples?</h2>
+            <p>
+                In Java, a clear distinction exists between primitive data types and object data types, each serving specific purposes. Let's delve into the characteristics of primitive data types with examples.
+            </p>
+            
+            <p>
+                <strong>Primitive Data Types:</strong>
+            </p>
+            
+            <p>
+                <em>Definition:</em>
+                Primitive data types are the fundamental building blocks provided by the Java language. They are predefined and directly represent simple values.
+            </p>
+            
+            <p>
+                <em>Storage:</em>
+                Primitive data types store actual values in memory.
+            </p>
+            
+            <p>
+                <em>Examples:</em>
+                Examples of primitive data types include <code>int</code>, <code>double</code>, <code>char</code>, <code>boolean</code>, and others.
+            </p>
+            
+            <p>
+                <em>Usage:</em>
+                They are used for handling simple and small-sized data, and are generally more memory-efficient.
+            </p>
+            
+            <p>
+                <em>Default Values:</em>
+                Primitive data types are automatically initialized with default values. For instance, numeric types default to 0, and boolean defaults to false.
+            </p>
+            
+            <p>
+                <em>Operations:</em>
+                They support basic operations directly, such as arithmetic operations for numeric types.
+            </p>
+            
+            <p>
+                <em>Example:</em>
+            </p>
+            <div class="code-box">
+            <pre class="int">
+                <code>
+                    int age = 25;
+                    double price = 19.99;
+                    char grade = 'A';
+                    boolean isJavaFun = true;
+                </code>
+            </pre>
+        </div><br>
+        <p>
+            <strong>Object Data Types:</strong></p>
+            <p></p> <em>Definition:</em>
+           Object data types refer to instances of classes and other reference types. They include objects created from classes, arrays, and other user-defined types.
+        </p>
+        
+        <p>
+            <em>Storage:</em>
+            Object data types store references (memory addresses) to the actual data stored in memory.
+        </p>
+        
+        <p>
+            <em>Examples:</em>
+            String, user-defined classes, arrays, etc.
+        </p>
+        
+        <p>
+            <em>Usage:</em>
+            Used for complex and larger data structures. Supports encapsulation and abstraction through classes.
+        </p>
+        
+        <p>
+            <em>Default Values:</em>
+            References are initialized to null, indicating no reference to an object.
+        </p>
+        
+        <p>
+            <em>Operations:</em>
+            Support operations defined by the class or interface of the object.
+        </p>
+        
+        <p>
+            <em>Example:</em>
+            <div class="code-box">
+                <pre class="int">
+                    <code>
+                        String text = "Hello, Java!";
+                        MyClass myObject = new MyClass();
+                        int[] numbers = {1, 2, 3, 4, 5};                        
+                    </code>
+                </pre>
+            </div><br>
+        </p>
+        <p>
+            <h2 class="int">Summary:</h2> Primitive data types in Java are fundamental, predefined types that directly store actual values in memory. They are basic building blocks such as integers, floating-point numbers, characters, and booleans. Primitive types are known for their memory efficiency and are automatically initialized with default values. On the other hand, object data types represent instances of classes and other reference types. Examples include strings, user-defined classes, and arrays. Unlike primitives, object types store references, indicating memory addresses where the actual data is stored. Object types are used for more complex data structures, offering support for encapsulation, abstraction, and operations defined by the associated class or interface.
+        </p>
+        
+            
+            </div>  
+            <div class="footer">
+              <p>&copy; 2023 B.Tech-Wala. All rights reserved.</p>
+            </div>
+        </body>
+        </html>
+

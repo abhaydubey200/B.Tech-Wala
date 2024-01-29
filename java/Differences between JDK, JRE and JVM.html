@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>B.Tech-Wala</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.CSS">
+        <link rel="shortcut icon" href="web_logo-removebg-preview.png" type="image">
+
+        <style>
+            table {
+              width: 100%;
+              border-collapse: collapse;
+              margin-top: 20px;
+            }
+        
+            th, td {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+        
+            th {
+              background-color: #f2f2f2;
+            }
+          </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="int">Differences between JDK, JRE and JVM</h1>
+        </header><br><br><br><br>
+        <div class="info-box">
+            <h2 class="int">What is JDK?</h2><br>
+            <p>
+                <h2>Note:-</h2> stands for Java Development Kit. It is a software development kit used by Java developers to build, compile, debug, and run Java applications and applets. The JDK includes a set of tools, executables, and binaries for Java development.
+              </p>
+            
+              <p>
+                Here are some key components and features of the JDK:
+              </p>
+            
+              
+                <p><strong>1. Java Compiler (javac):</strong> The JDK includes the Java compiler, which is used to compile Java source code (.java files) into bytecode (.class files) that can be executed by the Java Virtual Machine (JVM).</p>
+            
+                <p><strong>2. Java Virtual Machine (JVM):</strong> The JDK provides the JVM, which is responsible for executing Java bytecode. It is a key component for running Java applications on different platforms.</p>
+            
+                <p><strong>3. Java Runtime Environment (JRE):</strong> The JDK includes the JRE, which is necessary for running Java applications. The JRE includes the JVM, libraries, and other components required for executing Java programs.</p>
+            
+                <p><strong>4. Java Development Tools:</strong> The JDK provides a set of development tools that aid in the creation, compilation, and debugging of Java applications. Some of these tools include:
+                  
+                    <p><strong>. Java Debugger (jdb):</strong> A command-line debugger for Java applications.</p>
+                    <p><strong>. Java Archive Tool (jar):</strong> Used for packaging Java applications and libraries into JAR files.</p>
+                    <p><strong>. Java Documentation Tool (javadoc):</strong> Generates HTML documentation from Java source code comments.</p>
+                  
+                </p>
+            
+                <p><strong>5. Java API (Application Programming Interface):</strong> The JDK includes the Java API, which consists of a vast set of classes and libraries that developers can use to build Java applications. The API provides standard functionality for tasks such as file I/O, networking, database access, and more.</p>
+            
+                <p><strong>6. JavaFX:</strong> Starting from JDK 8, JavaFX is included in the JDK. JavaFX is a platform for creating rich internet applications using a lightweight user interface API.</p>
+            
+                <p><strong>7. Java Mission Control and Java Flight Recorder:</strong> Advanced profiling and monitoring tools for analyzing and optimizing Java applications.</p>
+              
+            <br>
+              <p>
+                <h2>Note:-</h2>
+                The JDK is an essential tool for Java developers as it provides everything needed to develop, compile, and run Java applications. It is freely available for download from the official Oracle website or other OpenJDK distributions.
+              </p>
+<br><br>
+
+<h2 class="int">What is JRE?</h2><br>
+<h2>Note:-</h2>
+              <p>
+                The <strong>JRE</strong>, or Java Runtime Environment, is a software package that provides the runtime environment needed for executing Java applications. It includes the <strong>Java Virtual Machine (JVM)</strong>, supporting libraries, and other components that are necessary for Java applications to run properly. The JRE does not contain development tools such as compilers and debuggers; it is designed solely for running Java applications.
+              </p>
+            
+              <p>
+                Key components of the Java Runtime Environment include:
+                
+                  <p><strong>1. Java Virtual Machine (JVM):</strong> The JVM is a crucial component of the JRE responsible for executing Java bytecode. It interprets the bytecode or translates it into native machine code for execution.</p>
+                  <p><strong>2. Java Class Library:</strong> The JRE includes a set of standard class libraries, also known as the Java API (Application Programming Interface). These libraries provide a wide range of pre-built functionalities and classes that Java applications can utilize.</p>
+                  <p><strong>3. Java Launcher (java command):</strong> The Java Launcher is a command-line tool that launches Java applications. It is responsible for loading and executing Java programs by interacting with the JVM.</p>
+                  <p><strong>4. Java Plugin and Web Start:</strong> In older versions of Java, the JRE included a browser plugin for running Java applets within web browsers. Java Web Start allowed users to launch Java applications directly from the web.</p>
+                
+              </p><br>
+            <h2>
+                Note:-
+            </h2>
+              <p>
+                When you download and install Java on your system, you are essentially installing the Java Runtime Environment. The JRE is a fundamental component for running Java applications on a user's machine, ensuring that the compiled Java bytecode can be executed in a consistent and platform-independent manner.
+              </p>
+            
+              <p>
+                It's important to note that for Java developers who are actively working on creating and compiling Java applications, the <strong>Java Development Kit (JDK)</strong> is more suitable. The JDK includes the JRE but also provides additional tools such as compilers, debuggers, and other utilities necessary for Java development.
+              </p><br>
+              <h2 class="int">What is JVM?</h2>
+              <p>
+                The Java Virtual Machine (JVM) is a crucial component of the Java Runtime Environment (JRE) and plays a central role in executing Java programs. At the core of the JVM is the class file, which contains bytecode generated from the source code. This bytecode is stored in the Method Area, a part of memory dedicated to class-level information such as method names, fields, and static variables.
+              </p>
+            
+              <p>
+                The Execution Engine is responsible for executing the bytecode. This engine can be an interpreter or a Just-In-Time (JIT) compiler. Interpreters execute bytecode line by line, while JIT compilers translate the entire bytecode into native machine code for improved performance.
+              </p>
+            
+              <p>
+                The runtime data areas, including the Heap, Java Stack, Method Area, and PC Register, collectively manage the execution of Java programs. The Heap dynamically allocates memory for objects and performs garbage collection to reclaim unused memory. The Java Stack keeps track of method calls and local variables for each thread, and the PC Register stores the address of the current instruction being executed.
+              </p>
+            
+              <p>
+                Additionally, the JVM includes features like the Native Method Interface (JNI) for interacting with native applications, native method stacks for handling native methods, and support for Java Native Libraries (JNI) for communication between Java and native code. The JVM provides a platform-independent execution environment, ensuring that Java programs can run seamlessly across different operating systems.
+              </p>
+            
+              <p><br>
+                <h2>summary:-</h2>
+                In summary, the JVM orchestrates the execution of Java applications by interpreting or compiling bytecode, managing memory, and facilitating communication between Java and native code. It offers a robust and secure environment for running Java programs efficiently.
+              </p><br><br>
+              <h2 class="int">Differences between JDK,JRE and JVM?</h2>
+
+              <table>
+                <tr>
+                  <th>Term</th>
+                  <th>Full Form</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>JDK</td>
+                  <td>Java Development Kit</td>
+                  <td>
+                    JDK is a software development kit to develop applications in Java. It contains tools for developing, debugging, and monitoring Java code. It is the superset of JRE.
+                  </td>
+                </tr>
+                <tr>
+                  <td>JRE</td>
+                  <td>Java Runtime Environment</td>
+                  <td>
+                    JRE is a software bundle that provides Java class libraries with necessary components to run Java code. It contains class libraries and other supporting files that JVM requires to execute the program. It is the subset of JDK.
+                  </td>
+                </tr>
+                <tr>
+                  <td>JVM</td>
+                  <td>Java Virtual Machine</td>
+                  <td>
+                    JVM is the Java platform component that executes source code. It is platform-independent. Software development tools are not included in JVM. JVM is a subset of JRE. It is bundled in both software JDK and JRE.
+                  </td>
+                </tr>
+              </table>
+
+            </div>
+              
+<div class="footer">
+  <p>&copy; 2023 B.Tech-Wala. All rights reserved.</p>
+</div>
+</body>
+        </html>
+

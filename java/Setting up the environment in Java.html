@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.CSS">
+        <link rel="shortcut icon" href="web_logo-removebg-preview.png" type="image">
+    </head>
+    <body>
+        <header>
+            <h1 class="int">Setting up the environment in Java</h1>
+        </header><br><br><br><br>
+        <div class="info-box">
+            <h2 class="int">Setup For Windows:</h2>
+
+            <p>Follow these steps to set up the Java Development Kit (JDK) on your Windows system:</p>
+
+            
+              <p><strong>1.Download JDK:</strong> Visit the official Oracle JDK download page and download the latest version of the JDK that matches your system architecture (32-bit or 64-bit).</p>
+              <p><strong>2.Run Installer:</strong> Once the download is complete, run the installer executable (.exe file) that you obtained. Follow the on-screen instructions to install the JDK.</p>
+              <p><strong>3.Set JAVA_HOME:</strong> After installation, set the JAVA_HOME environment variable. Right-click on This PC or Computer, select Properties, and click on "Advanced system settings." In the System Properties window, click on the "Environment Variables" button. Under System variables, click "New" and add a variable named JAVA_HOME with the path to your JDK installation directory (e.g., C:\Program Files\Java\jdk-17).</p>
+              <p><strong>4.Add to PATH:</strong> Edit the PATH variable under System variables and add the bin directory of your JDK installation to it. Append a semicolon (;) followed by %JAVA_HOME%\bin to the end of the existing PATH variable.</p>
+              <p><strong>5.Verify Installation:</strong> Open a new command prompt and type <code>java -version</code> and <code>javac -version</code>. This should display information about the installed Java version and the Java compiler.</p>
+              <p><strong>6.Install an IDE (Optional):</strong> Optionally, you can install an Integrated Development Environment (IDE) like Eclipse or IntelliJ IDEA for a more comfortable development experience.</p>
+            
+            
+            <p>With these steps completed, you have successfully set up the Java environment on your Windows system. You can now start writing and running Java programs.</p>
+            
+            <h2 class="int">Setup For macOS:</h2>
+            <p>Setting up the Java environment on macOS involves several steps. Below is a guide to help you configure Java on your macOS system:</p>
+            
+                <p><strong>1.Install Java Development Kit (JDK):</strong> Ensure that you have the latest version of the Java Development Kit installed on your system. You can download the JDK from the official Oracle website or use OpenJDK.</p>
+                
+                <p><strong>2.Configure JAVA_HOME:</strong> Set the JAVA_HOME environment variable to the installation directory of your JDK. This is essential for other tools to locate the Java development environment.</p>
+              
+                <p><strong>3.Install Integrated Development Environment (IDE):</strong> Choose an IDE that supports Java development for iOS, such as IntelliJ IDEA or Eclipse. Install the IDE and configure it to use the JDK you installed in the previous steps.</p>
+              
+                <p><strong>4.Install the RoboVM Plugin:</strong> If you are using an IDE like IntelliJ IDEA, you may need the RoboVM plugin to enable iOS development. Install the plugin through the IDE's plugin manager.</p>
+              
+                <p><strong>5.Configure iOS Development Tools:</strong> For iOS development, you'll need the Xcode development tools. Install Xcode from the Mac App Store. Ensure that Xcode Command Line Tools are also installed.</p>
+              
+                <p><strong>6.Set Up an iOS Simulator:</strong> Use Xcode to set up an iOS simulator on your Mac. This allows you to test your Java applications on a simulated iOS device.</p>
+              
+                <p><strong>7.Start Java iOS Development:</strong> With your environment set up, you can start developing Java applications for iOS using the tools and features provided by your chosen IDE and the RoboVM plugin.</p>
+              
+              
+              <p>These steps should help you create a Java development environment on your macOS system for iOS app development. Make sure to consult the documentation of your chosen IDE and development tools for any specific instructions related to iOS development.</p>
+              
+              <h2 class="int">Setup For linux:</h2>
+
+              <p>Setting up the Java environment on Linux involves several steps. Below is a guide to help you configure Java on your Linux system:</p>
+
+
+  <p><strong>1.Check if Java is Installed:</strong> Open a terminal and type the following command to check if Java is already installed:<br><code>java -version</code></p>
+  <p><strong>2.Install Java:</strong> If Java is not installed, you can use the package manager specific to your Linux distribution to install it. For example, on Ubuntu, you can use:<br><code>sudo apt-get update</code><br><code>sudo apt-get install default-jre</code></p>
+  <p><strong>3.Install Java Development Kit (JDK):</strong> If you plan to develop Java applications, you'll need the JDK. Install it using a command similar to:<br><code>sudo apt-get install default-jdk</code></p>
+  <p><strong>4.Set Java Environment Variables:</strong> Update the environment variables by editing the <code>.bashrc</code> or <code>.zshrc</code> file. Add the following lines:<br><code>export JAVA_HOME=/usr/lib/jvm/default-java</code><br><code>export PATH=$PATH:$JAVA_HOME/bin</code></p>
+  <p><strong>5.Reload the Shell:</strong> To apply the changes, reload the shell or restart your terminal.</p>
+  <p><strong>6.Verify Installation:</strong> Type <code>java -version</code> and <code>javac -version</code> to verify that Java and the Java Compiler are correctly installed.</p>
+
+
+<p>This completes the setup of Java on your Linux system. You can now start developing and running Java applications.</p>
+
+          
+        </div>
+          
+<div class="footer">
+  <p>&copy; 2023 B.Tech-Wala. All rights reserved.</p>
+</div>
+        </body>
+        </html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>B.Tech-Wala</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.CSS">
+        <link rel="shortcut icon" href="web_logo-removebg-preview.png" type="image">
+    </head>
+    <body>
+        <header>
+            <h1 class="int">Just-In-Time</h1>
+        </header><br><br><br><br>
+        <div class="info-box">
+            <h2 class="int">What is Just-In-Time?</h2><br>
+            <p>
+                JIT stands for "Just-In-Time." In the context of Java, JIT refers to the Just-In-Time compiler, a component of the Java Runtime Environment (JRE). The primary purpose of the JIT compiler is to improve the performance of Java programs by translating Java bytecode into native machine code at runtime.
+              </p><br>
+            
+              <p>
+                Here's an overview of how the JIT compiler works:-
+              </p>
+            
+              
+                <p>
+                  <strong>1. Java Compilation Process:</strong>
+                  
+                    <p>When you write a Java program, the source code is first compiled into an intermediate form called bytecode. This bytecode is platform-independent and can be executed on any system with a Java Virtual Machine (JVM).</p>
+                  
+                </p>
+                <p>
+                  <strong>2. JIT Compilation:</strong>
+                  
+                    <p>Instead of interpreting the bytecode line by line, the JVM can use the JIT compiler to translate the entire bytecode into native machine code just before execution.</p>
+                    <p>The translation is done on a method-by-method basis. Methods that are frequently executed or "hot" are candidates for JIT compilation.</p>
+                    <p>The generated native code is specific to the underlying hardware architecture and is stored in memory for subsequent executions.</p>
+                  
+                </p>
+                <p>
+                  <strong>3. Execution of Native Code:</strong>
+                  
+                    <p>Once a method has been JIT-compiled, subsequent calls to that method can directly execute the native machine code rather than interpreting the bytecode.</p>
+                    <p>This results in improved performance, as native code can be executed more efficiently by the hardware.</p>
+                  
+                </p>
+                <p>
+                  <strong>4. Adaptive Compilation:</strong>
+                  
+                    <p>Modern JVMs often use adaptive compilation strategies. Initially, methods may be interpreted, and if they are executed frequently, the JIT compiler identifies them as "hotspots" and generates optimized native code.</p>
+                  
+                </p>
+              
+            
+              <p>
+                Benefits of JIT Compilation in Java:
+              </p>
+            
+              
+                <p><strong>5. Improved Performance:</strong> JIT compilation can significantly improve the execution speed of Java programs by translating bytecode into native code tailored to the underlying hardware.</p>
+                <p><strong>6. Platform Independence:</strong> Java remains platform-independent at the source code level, while the JIT compiler generates platform-specific native code, allowing Java programs to run efficiently on diverse systems.</p>
+              
+            <br>
+              <p>
+                <h2>Note:-</h2>
+                It's worth noting that while JIT compilation enhances the performance of Java programs, there is an initial overhead as the bytecode is interpreted or compiled. Over time, as hotspots are identified and optimized, the overall performance improves.
+              </p><br>
+              <h2 class="int">Working on JIT Compiler?</h2>
+
+              <p>
+                Working with the JIT compiler typically involves writing Java code, understanding the Java compilation process, and observing the performance improvements achieved through JIT compilation. Here are some general steps and considerations:
+              </p>
+            
+              <p>
+                <strong>Write Java Code:</strong><br>
+                Begin by writing Java code that you want to optimize. This could be any Java application or program.
+              </p>
+            
+              <p>
+                <strong>Compile Java Code to Bytecode:</strong><br>
+                Use the Java compiler (javac) to compile your Java source code into bytecode. This results in .class files containing the bytecode.
+              </p>
+            
+              <p>
+                <strong>Run Java Program:</strong><br>
+                Execute your Java program using the Java Virtual Machine (JVM). At this point, the JVM interprets the bytecode.
+              </p>
+            
+              <p>
+                <strong>Observe JIT Compilation:</strong><br>
+                The JIT compiler comes into play during the execution of the Java program. It identifies "hotspots," which are frequently executed portions of code.
+              </p>
+            
+              <p>
+                <strong>Optimized Native Code:</strong><br>
+                The JIT compiler translates the bytecode of hotspots into optimized native machine code specific to the underlying hardware.
+              </p>
+            
+              <p>
+                <strong>Performance Monitoring:</strong><br>
+                Monitor and measure the performance of your Java program. Tools like Java VisualVM or profilers can help you analyze the impact of JIT compilation on execution speed and resource utilization.
+              </p>
+            
+              <p>
+                <strong>Adaptive Compilation:</strong><br>
+                Understand that modern JVMs often employ adaptive compilation strategies. Initially, methods may be interpreted, and if they are executed frequently, the JIT compiler identifies them as hotspots and generates optimized native code.
+              </p>
+            
+              <p>
+                <strong>Debugging and Troubleshooting:</strong><br>
+                If needed, you can use debugging tools to analyze the behavior of your Java program. Understand how to troubleshoot issues related to JIT compilation, such as unexpected performance bottlenecks.
+              </p>
+            
+              <p>
+                <strong>Explore JIT Compiler Options:</strong><br>
+                Some JVMs provide options and flags that allow you to control the behavior of the JIT compiler. Explore and experiment with these options to customize the compilation process.
+              </p>
+            
+              <p>
+                Remember that the specific details of working with JIT compilation can depend on the Java Virtual Machine implementation you are using (e.g., OpenJDK, Oracle JDK) and the version of Java. Additionally, advancements and changes in the Java platform may have occurred since my last update in January 2022. Always refer to the latest documentation for the most accurate and up-to-date information.
+              </p>
+
+            </div>
+              
+<div class="footer">
+  <p>&copy; 2023 B.Tech-Wala. All rights reserved.</p>
+</div>
+        
+        
+        </body>
+        </html>
+

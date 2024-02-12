@@ -26,7 +26,7 @@ We welcome contributions from the community to help improve b.tech-wala. If you 
 
 ## Feedback
 
-We value your feedback! If you have any questions, comments, or concerns, please don't hesitate to reach out to us. You can contact us via email at [contact@b.tech-wala.com](mailto:contact@b.tech-wala.com) or through our website's contact form.
+We value your feedback! If you have any questions, comments, or concerns, please don't hesitate to reach out to us. You can contact us via email at [contactdubeyabhay430@gmail.com.com](mailto:contactdubeyabhay430@gmailcom) or through our website's contact form.
 
 ## License
 
